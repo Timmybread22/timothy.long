@@ -464,6 +464,79 @@ h4 {
   color: #e2e8f8;
 }
 
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.paper-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(18, 31, 63, 0.13);
+}
+
+.paper-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.paper-course {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #3552a0;
+}
+
+.paper-date {
+  font-size: 0.75rem;
+  color: #7a89a7;
+  white-space: nowrap;
+}
+
+.paper-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #121d39;
+}
+
+.paper-card p {
+  font-size: 0.88rem;
+  color: #52627e;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.paper-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #314b9f;
+}
+
+@media (max-width: 800px) {
+  .papers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-wrap {
   margin-top: 0;
 }

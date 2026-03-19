@@ -464,6 +464,15 @@ h4 {
   color: #4a63ad;
 }
 
+.card-section-title {
+  font-size: clamp(2.3rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  color: #17223f;
+  margin-bottom: 0;
+}
+
 .technical-card {
   background: #1b2548;
   border-color: transparent;
